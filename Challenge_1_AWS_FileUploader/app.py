@@ -36,5 +36,7 @@ def upload_file():
     return f"Uploaded! <a href='{file_url}' target='_blank'>{file_url}</a>"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
+# if __name__ == '__main__':
+#     app.run(debug=True)
     
