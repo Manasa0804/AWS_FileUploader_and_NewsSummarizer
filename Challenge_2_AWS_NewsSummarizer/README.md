@@ -12,7 +12,7 @@ Create a serverless function that takes a news article URL as input and returns 
 
 2. **Place this file (`lambda_function.py`) inside the same folder and zip everything:**
    ```bash
-   zip -r news_summarizer.zip .
+   zip -r summarizer.zip .
    ```
 
 3. **Deploy to AWS Lambda:**
