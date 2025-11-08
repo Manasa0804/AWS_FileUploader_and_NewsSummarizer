@@ -4,6 +4,14 @@
 - Render URL: [https://aws-file-uploader-rgza.onrender.com](https://aws-file-uploader-rgza.onrender.com)
 - Description: Uploads files to AWS S3 and returns a public download URL.
 
+
+
+
+
+
+
+
+
 ### Challenge 2 — AWS News Summarizer
 - API Gateway Endpoint: [https://w98n4it5ia.execute-api.ap-southeast-2.amazonaws.com/default/newsSummarizer](https://w98n4it5ia.execute-api.ap-southeast-2.amazonaws.com/default/newsSummarizer)
 - Description: Takes a news URL and returns a summarized version using Hugging Face API.
