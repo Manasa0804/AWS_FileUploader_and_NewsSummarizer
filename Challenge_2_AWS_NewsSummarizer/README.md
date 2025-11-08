@@ -56,6 +56,6 @@ A serverless AWS Lambda function that takes a news article URL as input and retu
 
     - python lambda_function.py
     
-10.Final Result:A fully functional serverless news summarizer that extracts and summarizes online articles using AWS Lambda and Hugging Face NLP.
+10. Final Result:A fully functional serverless news summarizer that extracts and summarizes online articles using AWS Lambda and Hugging Face NLP.
 
 ---
