@@ -1,4 +1,4 @@
-# **Challenge 2: AWS Lambda News Summarizer**
+# **Challenge 2 : AWS Lambda News Summarizer**
 
 ### **Objective**
 
