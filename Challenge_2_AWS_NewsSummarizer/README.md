@@ -1,45 +1,41 @@
-# AWS Lambda News Summarizer
+### Challenge 2 – AWS Lambda News Summarizer
 
 ### Objective
-Create a serverless function that takes a news article URL as input and returns a short summarized version using a free NLP API (Hugging Face).
+
+Create a serverless AWS Lambda function that takes a news article URL as input and returns a short summarized version using the Hugging Face NLP API.
 
 ### Setup Steps
 
-1. **Install dependencies locally (for packaging):**
-   ```bash
-   pip install requests newspaper3k -t .
-   ```
+1.Install dependencies locally (for packaging):
 
-2. **Place this file (`lambda_function.py`) inside the same folder and zip everything:**
-   ```bash
-   zip -r summarizer.zip .
-   ```
+pip install requests beautifulsoup4 -t .
 
-3. **Deploy to AWS Lambda:**
-   - Go to AWS Console → Lambda → Create function (Python 3.9).
-   - Upload `news_summarizer.zip` under *Code source*.
-   - Add environment variable:
-     - Key: `HF_API_TOKEN`
-     - Value: `your_hugging_face_token_here`
 
-4. **Add API Gateway Trigger:**
-   - Add Trigger → API Gateway → HTTP API → Open.
-   - Copy the Invoke URL to test.
+2.Place this file (lambda_function.py) inside the same folder and zip everything:
 
-5. **Test with curl or Postman:**
-   ```bash
-   curl -X POST https://your-api-url.amazonaws.com/default/newsSummarizer    -H "Content-Type: application/json"    -d '{"url": "https://www.bbc.com/news/technology-70012345"}'
-   ```
+zip -r summarizer.zip .
 
-### Output Example
-```json
-{
-  "summary": "BBC reports that new AI regulations are being discussed globally..."
-}
-```
+3.Deploy to AWS Lambda:
 
-### Behind the Scenes
-- AWS Lambda receives the POST request from API Gateway.
-- The `newspaper3k` library extracts article text.
-- The Hugging Face API generates a concise summary.
-- Lambda returns the result in JSON format.
+Go to AWS Console → Lambda → Create function (Python 3.9)
+
+4.Choose Author from scratch
+
+Upload your news_summarizer.zip file under Code Source
+
+5.Add Environment Variable:
+
+Key: HF_API_TOKEN
+Value: your_hugging_face_token_here
+
+6.Add API Gateway Trigger:
+
+Go to Lambda → Add Trigger → API Gateway
+
+Choose HTTP API and set it to Open
+
+Copy the Invoke URL shown after creation
+
+7.Tested the Flask app locally by running:
+
+python app.py
