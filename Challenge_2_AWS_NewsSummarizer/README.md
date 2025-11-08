@@ -54,7 +54,7 @@ A serverless AWS Lambda function that takes a news article URL as input and retu
    ```
 9. Tested the Flask app locally by running:
 
-  - python app.py
+    - python app.py
     
 10.Final Result:A fully functional serverless news summarizer that extracts and summarizes online articles using AWS Lambda and Hugging Face NLP.
 
